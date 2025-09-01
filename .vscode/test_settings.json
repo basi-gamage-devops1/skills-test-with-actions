@@ -1,0 +1,29 @@
+{
+    "tests": [
+        {
+            "name": "test_function_returns_expected_value",
+            "description": "Test that the function returns the expected value for normal input.",
+            "code": "from my_module import my_function\nself.assertEqual(my_function(2), 4)"
+        },
+        {
+            "name": "test_function_handles_edge_case",
+            "description": "Test that the function handles edge case input.",
+            "code": "from my_module import my_function\nself.assertEqual(my_function(0), 0)"
+        },
+        {
+            "name": "test_function_raises_exception",
+            "description": "Test that the function raises an exception for invalid input.",
+            "code": "from my_module import my_function\nwith self.assertRaises(ValueError):\n    my_function(-1)"
+        },
+        {
+            "name": "test_class_initialization",
+            "description": "Test that the class initializes with correct attributes.",
+            "code": "from my_module import MyClass\nobj = MyClass('test')\nself.assertEqual(obj.name, 'test')"
+        },
+        {
+            "name": "test_class_method",
+            "description": "Test that the class method returns the correct result.",
+            "code": "from my_module import MyClass\nobj = MyClass('test')\nself.assertTrue(obj.is_valid())"
+        }
+    ]
+}
